@@ -1,0 +1,5 @@
+[build]
+  publish = "."
+
+# Keine Build-Konfiguration nötig — reines Static-HTML
+# Netlify served direkt index.html aus dem Root
