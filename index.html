@@ -333,8 +333,7 @@
         .anim-pop { transform: scale(0.7); }
 
         /* Progress-Bar Grow */
-        .bar-grow { clip-path: inset(0 100% 0 0); transition: clip-path 1.2s cubic-bezier(0.25, 0.1, 0, 1); }
-        .bar-grow.visible { clip-path: inset(0 0 0 0); }
+
 
         /* Staggered Delays */
         .d-1 { transition-delay: 0.08s; }
@@ -345,6 +344,10 @@
         .d-6 { transition-delay: 0.48s; }
         .d-7 { transition-delay: 0.56s; }
         .d-8 { transition-delay: 0.64s; }
+        .d-9 { transition-delay: 0.72s; }
+        .d-10 { transition-delay: 0.80s; }
+        .d-11 { transition-delay: 0.88s; }
+        .d-12 { transition-delay: 0.96s; }
 
         ::selection {
             background: rgba(0, 240, 181, 0.2);
@@ -619,22 +622,22 @@
                                     class="w-7 h-7 rounded-full bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center text-[0.6rem] font-bold text-black">1</span>
                                 <span class="font-medium text-white/80">Path of Exile</span>
                             </li>
-                            <li class="flex items-center gap-3 text-sm text-dim/90">
+                            <li class="flex items-center gap-3 text-sm text-dim/90 reveal anim-up d-2">
                                 <span
                                     class="w-7 h-7 rounded-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center text-[0.6rem] font-bold text-black">2</span>
                                 <span class="font-medium text-white/80">Project Zomboid</span>
                             </li>
-                            <li class="flex items-center gap-3 text-sm text-dim/90 reveal anim-up d-2">
+                            <li class="flex items-center gap-3 text-sm text-dim/90 reveal anim-up d-3">
                                 <span
                                     class="w-7 h-7 rounded-full bg-gradient-to-br from-amber-700 to-amber-800 flex items-center justify-center text-[0.6rem] font-bold text-black">3</span>
                                 <span class="font-medium text-white/80">Crimson Desert</span>
                             </li>
-                            <li class="flex items-center gap-3 text-sm text-dim/90">
+                            <li class="flex items-center gap-3 text-sm text-dim/90 reveal anim-up d-4">
                                 <span
                                     class="w-7 h-7 rounded-full bg-[#2a2a3a] flex items-center justify-center text-[0.55rem] font-bold text-dim">4</span>
                                 <span class="font-medium text-white/80">Red Dead Redemption 2</span>
                             </li>
-                            <li class="flex items-center gap-3 text-sm text-dim/90 reveal anim-up d-3">
+                            <li class="flex items-center gap-3 text-sm text-dim/90 reveal anim-up d-5">
                                 <span
                                     class="w-7 h-7 rounded-full bg-[#2a2a3a] flex items-center justify-center text-[0.55rem] font-bold text-dim">5</span>
                                 <span class="font-medium text-white/80">The Last of Us Part 1</span>
@@ -651,27 +654,27 @@
                             <span>Souls(likes) Top 5</span>
                         </h3>
                         <ol class="space-y-2.5">
-                            <li class="flex items-center gap-3 text-sm text-dim/90">
+                            <li class="flex items-center gap-3 text-sm text-dim/90 reveal anim-up d-1">
                                 <span
                                     class="w-7 h-7 rounded-full bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center text-[0.6rem] font-bold text-black">1</span>
                                 <span class="font-medium text-white/80">Elden Ring</span>
                             </li>
-                            <li class="flex items-center gap-3 text-sm text-dim/90 reveal anim-up d-4">
+                            <li class="flex items-center gap-3 text-sm text-dim/90 reveal anim-up d-2">
                                 <span
                                     class="w-7 h-7 rounded-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center text-[0.6rem] font-bold text-black">2</span>
                                 <span class="font-medium text-white/80">Lies of P</span>
                             </li>
-                            <li class="flex items-center gap-3 text-sm text-dim/90">
+                            <li class="flex items-center gap-3 text-sm text-dim/90 reveal anim-up d-3">
                                 <span
                                     class="w-7 h-7 rounded-full bg-gradient-to-br from-amber-700 to-amber-800 flex items-center justify-center text-[0.6rem] font-bold text-black">3</span>
                                 <span class="font-medium text-white/80">The First Berserker: Khazan</span>
                             </li>
-                            <li class="flex items-center gap-3 text-sm text-dim/90 reveal anim-up d-5">
+                            <li class="flex items-center gap-3 text-sm text-dim/90 reveal anim-up d-4">
                                 <span
                                     class="w-7 h-7 rounded-full bg-[#2a2a3a] flex items-center justify-center text-[0.55rem] font-bold text-dim">4</span>
                                 <span class="font-medium text-white/80">Dark Souls 3</span>
                             </li>
-                            <li class="flex items-center gap-3 text-sm text-dim/90">
+                            <li class="flex items-center gap-3 text-sm text-dim/90 reveal anim-up d-5">
                                 <span
                                     class="w-7 h-7 rounded-full bg-[#2a2a3a] flex items-center justify-center text-[0.55rem] font-bold text-dim">5</span>
                                 <span class="font-medium text-white/80">Nioh 3</span>
@@ -709,7 +712,7 @@
                     <div class="flex items-center gap-3 py-2">
                         <span class="text-sm font-medium text-white/80 w-56 shrink-0 truncate">Elden Ring</span>
                         <div class="flex-1 h-2.5 rounded-full bg-[#2a2a3a] overflow-hidden">
-                            <div class="bar-grow h-full rounded-full bg-gradient-to-r from-accent to-emerald-400 d-1"
+                            <div class="h-full rounded-full bg-gradient-to-r from-accent to-emerald-400"
                                 style="width: 100%"></div>
                         </div>
                         <span class="text-[0.55rem] font-mono text-dim w-8 text-right tabular-nums">100%</span>
@@ -719,7 +722,7 @@
                         <span class="text-sm font-medium text-white/80 w-56 shrink-0 truncate">The First Berserker:
                             Khazan</span>
                         <div class="flex-1 h-2.5 rounded-full bg-[#2a2a3a] overflow-hidden">
-                            <div class="bar-grow h-full rounded-full bg-gradient-to-r from-accent to-emerald-400 d-2"
+                            <div class="h-full rounded-full bg-gradient-to-r from-accent to-emerald-400"
                                 style="width: 100%"></div>
                         </div>
                         <span class="text-[0.55rem] font-mono text-dim w-8 text-right tabular-nums">100%</span>
@@ -728,7 +731,7 @@
                     <div class="flex items-center gap-3 py-2">
                         <span class="text-sm font-medium text-white/80 w-56 shrink-0 truncate">Lies of P</span>
                         <div class="flex-1 h-2.5 rounded-full bg-[#2a2a3a] overflow-hidden">
-                            <div class="bar-grow h-full rounded-full bg-gradient-to-r from-accent to-emerald-400 d-3"
+                            <div class="h-full rounded-full bg-gradient-to-r from-accent to-emerald-400"
                                 style="width: 100%"></div>
                         </div>
                         <span class="text-[0.55rem] font-mono text-dim w-8 text-right tabular-nums">100%</span>
@@ -737,7 +740,7 @@
                     <div class="flex items-center gap-3 py-2">
                         <span class="text-sm font-medium text-white/80 w-56 shrink-0 truncate">Palworld</span>
                         <div class="flex-1 h-2.5 rounded-full bg-[#2a2a3a] overflow-hidden">
-                            <div class="bar-grow h-full rounded-full bg-gradient-to-r from-accent to-emerald-400 d-4"
+                            <div class="h-full rounded-full bg-gradient-to-r from-accent to-emerald-400"
                                 style="width: 100%"></div>
                         </div>
                         <span class="text-[0.55rem] font-mono text-dim w-8 text-right tabular-nums">100%</span>
@@ -747,7 +750,7 @@
                         <span class="text-sm font-medium text-white/80 w-56 shrink-0 truncate">Elden Ring
                             Nightreign</span>
                         <div class="flex-1 h-2.5 rounded-full bg-[#2a2a3a] overflow-hidden">
-                            <div class="bar-grow h-full rounded-full bg-gradient-to-r from-accent to-emerald-400 d-5"
+                            <div class="h-full rounded-full bg-gradient-to-r from-accent to-emerald-400"
                                 style="width: 100%"></div>
                         </div>
                         <span class="text-[0.55rem] font-mono text-dim w-8 text-right tabular-nums">100%</span>
@@ -756,7 +759,7 @@
                     <div class="flex items-center gap-3 py-2">
                         <span class="text-sm font-medium text-white/80 w-56 shrink-0 truncate">Black Myth: Wukong</span>
                         <div class="flex-1 h-2.5 rounded-full bg-[#2a2a3a] overflow-hidden">
-                            <div class="bar-grow h-full rounded-full bg-gradient-to-r from-accent to-emerald-400 d-6"
+                            <div class="h-full rounded-full bg-gradient-to-r from-accent to-emerald-400"
                                 style="width: 100%"></div>
                         </div>
                         <span class="text-[0.55rem] font-mono text-dim w-8 text-right tabular-nums">100%</span>
@@ -766,7 +769,7 @@
                         <span class="text-sm font-medium text-white/80 w-56 shrink-0 truncate">The Last of Us Part
                             1</span>
                         <div class="flex-1 h-2.5 rounded-full bg-[#2a2a3a] overflow-hidden">
-                            <div class="bar-grow h-full rounded-full bg-gradient-to-r from-accent to-emerald-400 d-7"
+                            <div class="h-full rounded-full bg-gradient-to-r from-accent to-emerald-400"
                                 style="width: 100%"></div>
                         </div>
                         <span class="text-[0.55rem] font-mono text-dim w-8 text-right tabular-nums">100%</span>
@@ -775,7 +778,7 @@
                     <div class="flex items-center gap-3 py-2">
                         <span class="text-sm font-medium text-white/80 w-56 shrink-0 truncate">AI Limit</span>
                         <div class="flex-1 h-2.5 rounded-full bg-[#2a2a3a] overflow-hidden">
-                            <div class="bar-grow h-full rounded-full bg-gradient-to-r from-accent to-emerald-400 d-8"
+                            <div class="h-full rounded-full bg-gradient-to-r from-accent to-emerald-400"
                                 style="width: 54%"></div>
                         </div>
                         <span class="text-[0.55rem] font-mono text-dim w-8 text-right tabular-nums">54%</span>
@@ -785,7 +788,7 @@
                         <span class="text-sm font-medium text-white/80 w-56 shrink-0 truncate">Dark Souls
                             Remastered</span>
                         <div class="flex-1 h-2.5 rounded-full bg-[#2a2a3a] overflow-hidden">
-                            <div class="bar-grow h-full rounded-full bg-gradient-to-r from-accent to-emerald-400 d-8"
+                            <div class="h-full rounded-full bg-gradient-to-r from-accent to-emerald-400"
                                 style="width: 41%"></div>
                         </div>
                         <span class="text-[0.55rem] font-mono text-dim w-8 text-right tabular-nums">41%</span>
@@ -794,7 +797,7 @@
                     <div class="flex items-center gap-3 py-2">
                         <span class="text-sm font-medium text-white/80 w-56 shrink-0 truncate">Dark Souls 3</span>
                         <div class="flex-1 h-2.5 rounded-full bg-[#2a2a3a] overflow-hidden">
-                            <div class="bar-grow h-full rounded-full bg-gradient-to-r from-accent to-emerald-400 d-8"
+                            <div class="h-full rounded-full bg-gradient-to-r from-accent to-emerald-4000"
                                 style="width: 62%"></div>
                         </div>
                         <span class="text-[0.55rem] font-mono text-dim w-8 text-right tabular-nums">62%</span>
@@ -803,7 +806,7 @@
                     <div class="flex items-center gap-3 py-2">
                         <span class="text-sm font-medium text-white/80 w-56 shrink-0 truncate">Dark Souls II: SotFS</span>
                         <div class="flex-1 h-2.5 rounded-full bg-[#2a2a3a] overflow-hidden">
-                            <div class="bar-grow h-full rounded-full bg-gradient-to-r from-accent to-emerald-400 d-8"
+                            <div class="h-full rounded-full bg-gradient-to-r from-accent to-emerald-4001"
                                 style="width: 42%"></div>
                         </div>
                         <span class="text-[0.55rem] font-mono text-dim w-8 text-right tabular-nums">42%</span>
@@ -831,7 +834,7 @@
             });
         }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
         document.querySelectorAll('.reveal:not(.visible)').forEach(el => observer.observe(el));
-        document.querySelectorAll('.bar-grow:not(.visible)').forEach(el => observer.observe(el));
+    
 
         console.log('%c⚡ machinezr', 'font-size:24px;font-weight:bold;color:#00f0b5;font-family:JetBrains Mono');
         console.log('%cGamer, Coder, Bastler. 🤘', 'font-size:12px;color:#8888a0;font-family:JetBrains Mono');
