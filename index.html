@@ -829,11 +829,12 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
+                } else {
+                    entry.target.classList.remove('visible');
                 }
             });
-        }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-        document.querySelectorAll('.reveal:not(.visible)').forEach(el => observer.observe(el));
+        }, { threshold: 0.2 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     
 
         console.log('%c⚡ machinezr', 'font-size:24px;font-weight:bold;color:#00f0b5;font-family:JetBrains Mono');
