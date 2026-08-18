@@ -333,8 +333,8 @@
         .anim-pop { transform: scale(0.7); }
 
         /* Progress-Bar Grow */
-        .bar-grow { transform: scaleX(0); transform-origin: left; transition: transform 1.2s cubic-bezier(0.25, 0.1, 0, 1); }
-        .bar-grow.visible { transform: scaleX(1); }
+        .bar-grow { clip-path: inset(0 100% 0 0); transition: clip-path 1.2s cubic-bezier(0.25, 0.1, 0, 1); }
+        .bar-grow.visible { clip-path: inset(0 0 0 0); }
 
         /* Staggered Delays */
         .d-1 { transition-delay: 0.08s; }
@@ -376,7 +376,7 @@
                         <span class="text-sm font-semibold tracking-wide text-white/90">machinezr</span>
                     </a>
                     <nav class="hidden sm:flex items-center gap-5 text-[0.6rem] text-dim uppercase tracking-widest">
-                        <a href="#" class="hover:text-accent transition-colors">Socials</a>
+                        <a href="#socials" class="hover:text-accent transition-colors">Socials</a>
                         <span class="text-[#2a2a3a]">/</span>
                         <a href="#apps" class="hover:text-accent transition-colors">Apps</a>
                         <span class="text-[#2a2a3a]">/</span>
@@ -391,7 +391,7 @@
 
 <div class="content-wrapper">
 
-        <section class="snap-section px-5 md:px-10">
+        <section class="snap-section px-5 md:px-10" id="socials">
         <div class="max-w-6xl mx-auto w-full flex flex-col justify-center" style="flex:1">
             
 
