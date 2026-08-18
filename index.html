@@ -213,6 +213,19 @@
             color: #9146ff;
         }
 
+        /* Instagram */
+        .social-card.instagram {
+            border-color: rgba(228, 64, 95, 0.3);
+        }
+        .social-card.instagram:hover {
+            border-color: #e4405f;
+            box-shadow: 0 0 50px -16px rgba(228, 64, 95, 0.3);
+        }
+        .social-card.instagram .social-icon {
+            background: rgba(228, 64, 95, 0.15);
+            color: #e4405f;
+        }
+
         /* ── App Card ── */
         .app-card {
             background: #181825;
@@ -362,6 +375,15 @@
                         <img src="assets/img/Machine Logo.png" alt="machinezr" class="h-8 w-auto" />
                         <span class="text-sm font-semibold tracking-wide text-white/90">machinezr</span>
                     </a>
+                    <nav class="hidden sm:flex items-center gap-5 text-[0.6rem] text-dim uppercase tracking-widest">
+                        <a href="#" class="hover:text-accent transition-colors">Socials</a>
+                        <span class="text-[#2a2a3a]">/</span>
+                        <a href="#apps" class="hover:text-accent transition-colors">Apps</a>
+                        <span class="text-[#2a2a3a]">/</span>
+                        <a href="#games" class="hover:text-accent transition-colors">Games</a>
+                        <span class="text-[#2a2a3a]">/</span>
+                        <a href="#completions" class="hover:text-accent transition-colors">Completions</a>
+                    </nav>
                     <span class="text-[0.6rem] text-dim tracking-widest uppercase hidden sm:block">coding & chaos <span class="text-accent">⏎</span></span>
                 </div>
             </div>
@@ -392,7 +414,7 @@
                 </div>
 
                 <!-- 3 Social Cards -->
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl mx-auto">
                     <!-- Steam -->
                     <a href="https://steamcommunity.com/id/Machinezrr/" target="_blank" rel="noopener"
                         class="social-card steam reveal anim-left d-1">
@@ -420,7 +442,13 @@
                         <span class="social-name">Twitch</span>
                         <span class="social-handle">Kanal besuchen →</span>
                     </a>
-                </div>
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/machinezrr/" target="_blank" rel="noopener" class="social-card instagram reveal anim-left d-4">
+                        <div class="social-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></div>
+                        <span class="social-name">Instagram</span>
+                        <span class="social-handle">@machinezrr →</span>
+                    </a>                </div>
 
                 <!-- Discord -->
                 <div class="flex justify-center mt-6 reveal anim-pop d-1">
@@ -438,11 +466,6 @@
             </div>
     </div>
     
-        <div class="flex justify-center pb-2">
-            <div class="flex flex-col items-center gap-0.5 text-dim/20">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="animate-bounce"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
-            </div>
-        </div>
         <!-- Scroll -->
         <div class="flex justify-center pb-2">
             <div class="flex flex-col items-center gap-0.5 text-dim/20">
@@ -562,11 +585,6 @@
             </p>
         </div>
     
-        <div class="flex justify-center pb-2">
-            <div class="flex flex-col items-center gap-0.5 text-dim/20">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="animate-bounce"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
-            </div>
-        </div>
         <!-- Scroll -->
         <div class="flex justify-center pb-2">
             <div class="flex flex-col items-center gap-0.5 text-dim/20">
@@ -662,12 +680,6 @@
                     </div>
                 </div>
 
-            </div>
-        </div>
-    
-        <div class="flex justify-center pb-2">
-            <div class="flex flex-col items-center gap-0.5 text-dim/20">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="animate-bounce"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
             </div>
         </div>
         <!-- Scroll -->
@@ -799,12 +811,6 @@
                 </div>
             </div>
         </div>
-    
-        <div class="flex justify-center pb-2">
-            <div class="flex flex-col items-center gap-0.5 text-dim/20">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="animate-bounce"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
-            </div>
-        </div>
     </section>
     
 
@@ -825,6 +831,7 @@
             });
         }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
         document.querySelectorAll('.reveal:not(.visible)').forEach(el => observer.observe(el));
+        document.querySelectorAll('.bar-grow:not(.visible)').forEach(el => observer.observe(el));
 
         console.log('%c⚡ machinezr', 'font-size:24px;font-weight:bold;color:#00f0b5;font-family:JetBrains Mono');
         console.log('%cGamer, Coder, Bastler. 🤘', 'font-size:12px;color:#8888a0;font-family:JetBrains Mono');
