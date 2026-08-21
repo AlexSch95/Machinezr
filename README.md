@@ -6,6 +6,9 @@ Gamer, Coder, Bastler — Windows-Apps die ich selber nice finde.
 
 ```
 ├── index.html              ← Hauptseite (Netlify startet hier)
+├── 404.html                ← Eigene 404-Seite (Netlify serviert sie automatisch)
+├── robots.txt              ← Crawler-Regeln + Sitemap-Referenz
+├── sitemap.xml             ← Sitemap für Suchmaschinen
 ├── assets/
 │   ├── img/
 │   │   ├── Machine Logo.png

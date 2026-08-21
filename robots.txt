@@ -1,0 +1,7 @@
+# machinezr — robots.txt
+# Alles darf gecrawlt werden, es gibt nur eine Seite.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://machinezr.de/sitemap.xml

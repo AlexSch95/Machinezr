@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 — machinezr</title>
+    <meta name="description" content="Diese Seite existiert nicht (mehr)." />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { mono: ['"JetBrains Mono"', 'monospace'] },
+                    colors: { surf: '#12121a', card: '#181825', border: '#2a2a3a', accent: '#00f0b5', 'accent-hover': '#00d4a0', dim: '#8888a0', 'deep-bg': '#0a0a0f' },
+                }
+            }
+        }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            background: #0a0a0f;
+            color: #d0d0e0;
+            height: 100%;
+            overflow: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        html {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .cyber-grid {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            background-image: linear-gradient(rgba(0, 240, 181, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 240, 181, 0.04) 1px, transparent 1px);
+            background-size: 64px 64px;
+        }
+
+        .content-wrapper {
+            position: relative;
+            z-index: 1;
+            height: 100vh;
+            height: 100dvh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .glow-line-center {
+            height: 2px;
+            width: 80px;
+            background: linear-gradient(90deg, transparent, #00f0b5, transparent);
+            border-radius: 1px;
+            margin: 0 auto;
+        }
+
+        .gh-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 9px 20px;
+            font-size: 0.8rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 500;
+            border: 1px solid #2a2a3a;
+            border-radius: 6px;
+            color: #b0b0c0;
+            background: #12121a;
+            text-decoration: none;
+            transition: background 0.2s, border-color 0.2s, color 0.2s;
+        }
+
+        .gh-btn:hover {
+            background: rgba(0, 240, 181, 0.08);
+            border-color: rgba(0, 240, 181, 0.35);
+            color: #00f0b5;
+        }
+
+        ::selection {
+            background: rgba(0, 240, 181, 0.2);
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cyber-grid"></div>
+
+    <div class="content-wrapper">
+        <div class="max-w-lg mx-auto text-center">
+            <div class="glow-line-center mb-6"></div>
+
+            <h1 class="text-6xl md:text-7xl font-bold text-accent tracking-tight">404</h1>
+
+            <p class="mt-4 text-sm md:text-base text-dim leading-relaxed">
+                Diese Seite existiert nicht (mehr).<br />
+                <span class="text-white/60">Vielleicht falsch getippt, oder ich hab sie wieder abgebaut.</span>
+            </p>
+
+            <div class="mt-8 flex justify-center">
+                <a href="/" class="gh-btn">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    Zur Startseite
+                </a>
+            </div>
+
+            <p class="mt-6 text-[0.65rem] text-dim/60 tracking-widest uppercase">
+                machinezr <span class="text-accent">⏎</span>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        console.log('%c⚡ machinezr', 'font-size:24px;font-weight:bold;color:#00f0b5;font-family:JetBrains Mono');
+        console.log('%c404 — hier ist nichts. 🤘', 'font-size:12px;color:#8888a0;font-family:JetBrains Mono');
+    </script>
+</body>
+
+</html>
